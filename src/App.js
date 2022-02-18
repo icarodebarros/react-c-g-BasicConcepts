@@ -15,11 +15,25 @@ function App() {
     });
   };
 
+  // return (
+  //   <div>
+  //     <AddUser onAddUser={addUserHandler} />
+  //     <UsersList users={usersList} />
+  //   </div>
+  // );
+
+  // return (
+  //   <>
+  //     <AddUser onAddUser={addUserHandler} />
+  //     <UsersList users={usersList} />
+  //   </>
+  // );
+
   return (
-    <div>
+    <React.Fragment>
       <AddUser onAddUser={addUserHandler} />
       <UsersList users={usersList} />
-    </div>
+    </React.Fragment>
   );
 }
 
